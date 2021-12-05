@@ -1,0 +1,37 @@
+{
+  "name": "eemovel-react-components-library",
+  "version": "0.0.1",
+  "description": "eemovel react components library",
+  "main": "build/index.js",
+  "scripts": {
+    "yarn": "yarn",
+
+    "test": "make test",
+
+    "init-ts-config": "tsc --init",
+    "build": "tsc",
+    "clean-build": "rm -rf build",
+    "fresh-build": "yarn clean-build && yarn build",
+
+    "clean-dependencies": "rm -rf node_modules",
+    "reset-dependencies": "yarn clean-dependencies && rm -rf yarn.lock && yarn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "eemovel-react-components-library"
+  },
+  "keywords": [
+    "eemovel",
+    "react-components-library",
+    "design-system",
+    "ds"
+  ],
+  "author": "eemovel",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.5.2"
+  },
+  "devDependencies": {
+    "tsc": "^2.0.3"
+  }
+}
